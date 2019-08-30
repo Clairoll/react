@@ -1,0 +1,76 @@
+#header {
+  background: #fff;
+  padding: 0;
+}
+
+#header .header-container {
+  min-width: 300px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header .header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header .header-main > div {
+  width: 100vh;
+  height: 64px;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  #header .header-main > div {
+    width: auto;
+    height: 64px;
+  }
+}
+#header .header-main > div > a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#header .header-main .checked {
+  border-bottom: 2px solid #00a0e9;
+  color: #00a0e9;
+}
+#header .header-main .checked a {
+  color: #00a0e9;
+}
+
+#header .header-container .header-main .dischecked:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #00a0e9;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transition: all 0.5s;
+}
+
+#header .header-container .header-main .dischecked:hover:after {
+  left: 0%;
+  width: 100%;
+}
+
+#header .header-main .dischecked:hover a {
+  color: #00a0e9;
+}
+
+#header .header-main .avator img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right:15px;
+}
+
+#Content {
+  /* background: url("../../../images/bg4.jpg") no-repeat; */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 20px;
+}

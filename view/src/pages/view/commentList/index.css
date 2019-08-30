@@ -1,0 +1,63 @@
+#comment-list .input {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  max-width: 1200px;
+  min-width: 300px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#comment-list .input .input-item {
+  margin: 0 20px;
+}
+
+#comment-list .input .input-item button {
+  margin-top: 15px;
+}
+
+#comment-list .list .card {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+#comment-list .list .list-card .list-item {
+  width: 100%;
+}
+#comment-list .list .list-card .list-item .replay-list {
+  padding-top:15px;
+  padding-left:45px;
+}
+
+#comment-list .list .list-card .list-item .item-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+.bt {
+  border-bottom: 1px solid #ddd;
+}
+
+#comment-list .list .list-card .list-item .item-container .item-avator{
+    height:45px;
+    width: 45px;
+
+}
+
+#comment-list .list .list-card .list-item .item-container .item-avator img{   
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+#comment-list .list .list-card .list-item .item-container .item-content {
+    flex:1;
+    margin-left:15px;
+}
+
+#comment-list .list .list-card .list-item .item-container .item-content .username{
+    color:#01aaed;
+}
+
+#comment-list .list .list-card .list-item .item-container .item-content .reply {
+  padding-left:10px;
+  color:#009688;
+}

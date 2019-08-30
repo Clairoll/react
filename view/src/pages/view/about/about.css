@@ -1,0 +1,49 @@
+#about {
+  max-width: 1220px;
+  min-width: 300px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+#about .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#about .container .ant-list-item:hover {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#about .container .about-left {
+  max-width: 800px;
+  margin-right: 20px;
+  min-width: 300px;
+  width: 100%;
+}
+
+#about .ant-list-header {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+#about .ant-list-item {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about-list-item {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  #about .container .about-left {
+    margin-right: 0px;
+  }
+}
+
+#about .about-right {
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+}

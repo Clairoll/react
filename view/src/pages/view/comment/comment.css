@@ -1,0 +1,22 @@
+#comment {
+    max-width: 1200px;
+    min-width: 300px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255,0.65);
+    padding: 15px 20px 10px 20px;
+}
+
+#comment .desc .comment-item {
+    width:100%;
+}
+
+#comment .desc .comment-item h2{
+    border-left:4px solid #6bc30d;
+    padding-left:10px;
+}
+
+#comment .desc .comment-item .err {
+    color:red;
+    font-size: 24px;
+}

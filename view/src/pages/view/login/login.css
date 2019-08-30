@@ -1,0 +1,36 @@
+#login {
+  position: relative;
+}
+
+#login .model {
+  max-width: 500px;
+  min-width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#login .model .login-button {
+  width:100%;
+}
+
+#login .login-from h2 {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+#login .model .other  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#login .model .other >div {
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  width:50%;
+}

@@ -1,0 +1,78 @@
+#friend {
+  max-width: 1200px;
+  min-width: 300px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+#friend .friend-card {
+    background-color:rgba(255,255,255,0.65);
+}
+#friend .friend-card .friend-item {
+    width:100%;
+}
+
+#friend .friend-card .friend-item h2{
+    border-left:4px solid #6bc30d;
+    padding-left:10px;
+}
+
+#friend .friend-card .friend-item .err {
+    color:red;
+    font-size: 24px;
+}
+
+#friend .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+
+
+#friend .list-item {
+    width:250px;
+    margin-top: 20px;
+    background-color:rgba(255,255,255,0.65);
+    padding:20px;
+}
+#friend .list-item:hover {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#friend .list-item .list-icon {
+   height:65px;
+   line-height: 65px;
+    
+}
+
+#friend .list-item .list-icon img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    float:left;
+}
+
+#friend .list-item .name{
+    padding-left: 10px;
+    float: left;
+}
+
+#friend .list-item .list-content {
+    margin-top: 15px;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#friend .list-item:nth-child(3n){
+    margin-right:0;
+}
+@media screen and (max-width: 500px) {
+    #friend .list {
+        justify-content: center;
+    }
+    #friend .list-item {
+        width:100%
+    }
+  }

@@ -1,0 +1,19 @@
+body {
+    background: url(../../assets/images/bg.jpg) no-repeat;
+    background-size: cover;
+    font-size: 16px;
+}
+#login {
+  position: relative;
+}
+#login .login-center {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 200px 0 0 -100px;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 50px 50px;
+}
