@@ -18,8 +18,10 @@ function randomString(len) {
   return pwd;
 }
 
-let taken = "";
-let md5Taken ="";
+// let taken = "";
+// let md5Taken ="";
+// 登陆用户数据
+let loginData = {};
 
 // 博文列表接口
 router.post("/view/article", async ctx => {
@@ -198,8 +200,8 @@ router.post("/view/comment", async ctx => {
     articleId,
     takens
   } = ctx.request.body;
-
-  if (md5Taken !== takens) {
+  let taken = loginData[username].taken;
+  if (taken !== takens) {
     ctx.body = {
       code: 203,
       message: "请先登录"
@@ -253,8 +255,10 @@ router.post("/view/login", async ctx => {
     return;
   }
 
-  taken = randomString(6);
-  md5Taken = MD5(taken)
+  let taken = MD5(randomString());
+  loginData[user[0].get("username")] = {
+    taken
+  };
   ctx.body = {
     taken,
     user: {
@@ -360,10 +364,9 @@ router.post("/view/criticsm", async ctx => {
     takens
   } = ctx.request.body;
 
-  
-
   if (userId) {
-    if (md5Taken !== takens) {
+    let taken = loginData[username].taken;
+    if (taken !== takens) {
       ctx.body = {
         code: 203,
         message: "请先登录"

@@ -29,7 +29,7 @@ class Login extends Component {
         return;
       }
       if (this.state.type === "login") {
-        utils.setCookie('takens',md5(res.data.taken))
+        utils.setCookie('takens',res.data.taken)
         utils.setItem("user", res.data.user);
         browserHistory.push("/list");
       } else {
