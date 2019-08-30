@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "blog",
+    "host": "47.102.197.77",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  },
+  "test": {
+    "username": "root",
+    "password": "123456",
+    "database": "blog",
+    "host": "47.102.197.77",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  },
+  "production": {
+    "username": "root",
+    "password": "123456",
+    "database": "blog",
+    "host": "47.102.197.77",
+    "dialect": "mysql",
+    "timezone": "+08:00"
+  }
+}
