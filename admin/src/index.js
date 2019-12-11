@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { hashHistory } from 'react-router'  
 import '../node_modules/antd/dist/antd.css';
-import RouterPage from './router/routerPages'  
+import RouterPage from './router/routerPages' 
+ 
 
 ReactDOM.render(<RouterPage history = { hashHistory } />, document.getElementById('root'));
 
